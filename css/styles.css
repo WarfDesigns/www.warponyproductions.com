@@ -445,3 +445,123 @@ figcaption { padding: 18px 20px 22px; }
 
   .site-footer { flex-direction: column; text-align: center; }
 }
+
+.narrow {
+  max-width: 900px;
+}
+
+.seo-section {
+  padding-top: 24px;
+}
+
+.seo-section .section-heading p:not(.eyebrow),
+.faq-list p,
+.booking-list {
+  color: var(--muted);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.02rem;
+}
+
+.seo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-top: 34px;
+}
+
+.seo-grid article,
+.faq-list details {
+  padding: 26px;
+  border-radius: 22px;
+  background: var(--white);
+  box-shadow: var(--shadow);
+}
+
+.seo-grid h3 {
+  margin: 0 0 10px;
+  color: var(--copper-dark);
+  font-size: 1.35rem;
+  line-height: 1.12;
+}
+
+.seo-grid p,
+.faq-list p { margin: 0; }
+
+.faq {
+  padding-top: 24px;
+}
+
+.faq-list {
+  display: grid;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.faq-list summary {
+  cursor: pointer;
+  color: var(--ink);
+  font-size: 1.25rem;
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.faq-list details p {
+  margin-top: 14px;
+}
+
+.booking-list {
+  margin: 22px 0 0;
+  padding-left: 20px;
+}
+
+.booking-list li + li {
+  margin-top: 8px;
+}
+
+@media (max-width: 920px) {
+  .seo-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 640px) {
+  .seo-grid { grid-template-columns: 1fr; }
+}
+
+.plain-page {
+  min-height: 100vh;
+  background: linear-gradient(180deg, var(--sand), var(--cream));
+}
+
+.plain-content {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 72px clamp(18px, 5vw, 56px);
+}
+
+.plain-content h1,
+.plain-content h2 {
+  color: var(--ink);
+  line-height: 1;
+}
+
+.plain-content h1 {
+  margin: 0 0 22px;
+  font-size: clamp(2.4rem, 7vw, 5rem);
+}
+
+.plain-content h2 {
+  margin: 34px 0 10px;
+  font-size: clamp(1.6rem, 4vw, 2.6rem);
+}
+
+.plain-content p {
+  color: var(--muted);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.05rem;
+}
+
+.footer-links {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}

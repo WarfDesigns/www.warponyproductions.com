@@ -1,0 +1,17 @@
+{
+  "name": "Warpony Productions",
+  "short_name": "Warpony",
+  "description": "Native American rodeo act, living history, and patriotic arena entertainment.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fff7e8",
+  "theme_color": "#793817",
+  "icons": [
+    {
+      "src": "/logo.webp",
+      "sizes": "1052x1052",
+      "type": "image/webp",
+      "purpose": "any"
+    }
+  ]
+}
