@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /template/
 
 Sitemap: https://www.warponyproductions.com/sitemap.xml
