@@ -41,6 +41,11 @@ a { color: inherit; }
   color: var(--white);
 }
 
+.page-header {
+  min-height: auto;
+  padding-bottom: 24px;
+}
+
 .site-nav {
   display: flex;
   align-items: center;
