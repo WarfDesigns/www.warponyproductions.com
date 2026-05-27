@@ -371,7 +371,8 @@ figcaption { padding: 18px 20px 22px; }
 }
 
 .people-grid img,
-.gallery-grid img {
+.gallery-grid img,
+.gallery-grid video {
   width: 100%;
   aspect-ratio: 3 / 4;
   object-fit: cover;
