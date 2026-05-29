@@ -381,6 +381,22 @@ figcaption { padding: 18px 20px 22px; }
   grid-template-columns: repeat(4, 1fr);
 }
 
+.gallery-grid figure {
+  --gallery-aspect: 3 / 4;
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery-item--wide {
+  --gallery-aspect: 3 / 2;
+  grid-column: span 2;
+}
+
+.gallery-item--square { --gallery-aspect: 1 / 1; }
+.gallery-item--poster { --gallery-aspect: 4 / 5; }
+.gallery-item--portrait { --gallery-aspect: 3 / 4; }
+.gallery-item--tall { --gallery-aspect: 9 / 16; }
+
 .people-grid img,
 .gallery-grid img,
 .gallery-grid video {
@@ -395,6 +411,7 @@ figcaption { padding: 18px 20px 22px; }
 
 .gallery-grid img,
 .gallery-grid video {
+  aspect-ratio: var(--gallery-aspect);
   object-fit: contain;
 }
 
@@ -487,6 +504,8 @@ figcaption { padding: 18px 20px 22px; }
   .cards,
   .people-grid,
   .gallery-grid { grid-template-columns: 1fr; }
+
+  .gallery-item--wide { grid-column: auto; }
 
   .section { padding-block: 64px; }
 
