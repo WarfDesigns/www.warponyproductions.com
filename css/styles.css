@@ -386,8 +386,16 @@ figcaption { padding: 18px 20px 22px; }
 .gallery-grid video {
   width: 100%;
   aspect-ratio: 3 / 4;
-  object-fit: contain;
   background: var(--media-mat);
+}
+
+.people-grid img {
+  object-fit: cover;
+}
+
+.gallery-grid img,
+.gallery-grid video {
+  object-fit: contain;
 }
 
 .gallery-grid video { background: var(--charcoal); }
