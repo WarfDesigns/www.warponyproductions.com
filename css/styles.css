@@ -9,6 +9,7 @@
   --charcoal: #17110e;
   --white: #ffffff;
   --shadow: 0 24px 60px rgba(43, 27, 19, 0.18);
+  --media-mat: #f5e7ce;
   --radius: 28px;
 }
 
@@ -256,8 +257,9 @@ figcaption {
 .feature-image img {
   width: 100%;
   max-height: 680px;
-  object-fit: cover;
-  object-position: top;
+  object-fit: contain;
+  object-position: center;
+  background: var(--media-mat);
 }
 
 figcaption { padding: 18px 20px 22px; }
@@ -296,7 +298,8 @@ figcaption { padding: 18px 20px 22px; }
 .card img {
   width: 100%;
   aspect-ratio: 1 / 1;
-  object-fit: cover;
+  object-fit: contain;
+  background: var(--media-mat);
 }
 
 .card h3,
@@ -341,7 +344,8 @@ figcaption { padding: 18px 20px 22px; }
 .story-card img {
   width: 100%;
   aspect-ratio: 4 / 3;
-  object-fit: cover;
+  object-fit: contain;
+  background: var(--media-mat);
 }
 
 .story-card.large img { aspect-ratio: 4 / 5; }
@@ -382,10 +386,11 @@ figcaption { padding: 18px 20px 22px; }
 .gallery-grid video {
   width: 100%;
   aspect-ratio: 3 / 4;
-  object-fit: cover;
+  object-fit: contain;
+  background: var(--media-mat);
 }
 
-.gallery-grid figure:first-child img { object-fit: contain; background: #f5e7ce; }
+.gallery-grid video { background: var(--charcoal); }
 
 .booking {
   display: grid;
